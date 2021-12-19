@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/szymon/CLionProjects/hashtable/FileReader.h
+fstream
+-
+vector
+-
+
 /home/szymon/CLionProjects/hashtable/HashTable.cpp
 HashTable.h
 /home/szymon/CLionProjects/hashtable/HashTable.h
@@ -19,4 +25,18 @@ memory
 -
 sstream
 -
+
+/home/szymon/CLionProjects/hashtable/main.cpp
+iostream
+-
+cstring
+-
+vector
+-
+random
+-
+HashTable.h
+/home/szymon/CLionProjects/hashtable/HashTable.h
+FileReader.h
+/home/szymon/CLionProjects/hashtable/FileReader.h
 

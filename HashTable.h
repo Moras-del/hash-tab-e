@@ -21,7 +21,10 @@ struct record{
     }
 
     friend std::ostream& operator<<(std::ostream &of, record &data){
-        of << data.popularity << " " << data.surname;
+        if (data.surname.empty())
+            of << "DEL";
+        else
+            of << data.popularity << " " << data.surname;
         return of;
     }
 
@@ -38,7 +41,7 @@ public:
     void printContent();
 
 private:
-    uint32_t hash(const char* key, int size, int i);
+    uint32_t hash(const char* key, int size);
     record** table;
     const size_t tableSize;
 };
